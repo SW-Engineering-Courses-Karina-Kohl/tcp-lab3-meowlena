@@ -63,7 +63,7 @@ public abstract class FiguraGeometrica implements CalculosGeometricos {
      * 
      * @return the total of figures
      */
-    public int getTotalFiguras() {
+    public static int getTotalFiguras() {
         return FiguraGeometrica.counterId;
     }
 
