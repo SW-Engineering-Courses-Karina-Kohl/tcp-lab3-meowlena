@@ -3,6 +3,7 @@ public abstract class FiguraGeometrica implements CalculosGeometricos {
 
     private int id;
     private String color;
+    private final String tipo = "Figura";
 
     FiguraGeometrica() {
 
@@ -23,7 +24,7 @@ public abstract class FiguraGeometrica implements CalculosGeometricos {
     }
 
     public String getTipoFigura() {
-        return "Figura";
+        return this.tipo;
     }
 
     /**
@@ -52,8 +53,8 @@ public abstract class FiguraGeometrica implements CalculosGeometricos {
      * @return figure info as color and ID
      */
     public String getInfo() {
-        String info = "ID: " + this.id + "\n";
-        info += "Cor: " + this.color + "\n";
+        String info = "ID: " + this.id + ", ";
+        info += "Cor: " + this.color + " ";
 
         return info;
     }
