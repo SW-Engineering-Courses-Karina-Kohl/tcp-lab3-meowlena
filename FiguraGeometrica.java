@@ -54,7 +54,7 @@ public abstract class FiguraGeometrica implements CalculosGeometricos {
      */
     public String getInfo() {
         String info = "ID: " + this.id + ", ";
-        info += "Cor: " + this.color + " ";
+        info += "Cor: " + this.color;
 
         return info;
     }
